@@ -3,7 +3,7 @@
 
 int main()
 {
-    int n;
+    long long n;
     std::cin>>n;
     long long sum=0;
     std::vector<int> arr(n-1);
@@ -12,6 +12,7 @@ int main()
         sum+=arr[i];
         
     }
-    std::cout<<n*(n+1)/2-sum;
+    long long total=n*(n+1)/2;
+    std::cout<<total-sum;
     return 0;
 }
